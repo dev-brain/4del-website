@@ -247,7 +247,13 @@
     <h3 id="social" class="center">Our Social Media Presence</h3>
 
     <div style="height: auto;overflow: hidden;">
-        <div class="instagram_profile" id="instagram-feed1">
+        <div class="instagram_profile show-on-medium-and-up hide-on-small-only" id="instagram-feed1">
+
+        </div>
+    </div>
+
+    <div style="height: auto;overflow: hidden;">
+        <div class="instagram_profile2 show-on-small hide-on-med-and-up" id="instagram-feed2">
 
         </div>
     </div>
@@ -321,6 +327,28 @@
 
 
         // });
+    </script>
+    <script>
+        (function ($) {
+             $(window).on('load', function () {
+                $("#loader").fadeOut("slow");
+
+                $.instagramFeed({
+                    'username': '4delivery_',
+                    'container': "#instagram-feed2",
+                    'display_profile': false,
+                    'display_biography': false,
+                    'display_gallery': true,
+                    'callback': null,
+                    'styling': true,
+                    'items': 4,
+                    'items_per_row': 2,
+                    'margin': 1,
+                    'lazy_load': true,
+                    'on_error': console.error
+                });
+            });
+        })(jQuery);
     </script>
 
     <script src="js/jquery.instagramFeed.min.js"></script>
