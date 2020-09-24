@@ -51,6 +51,13 @@
             height: 600px;
             margin-bottom: 10px;
         }
+        .carousel .indicators .indicator-item {
+        background-color: #81b6da;
+        }
+
+        .carousel .indicators .indicator-item.active {
+        background-color: #003152;
+        }
 }
 </style>
 
@@ -431,9 +438,10 @@
     </script>
 
     <script>
-        $(document).ready(function(){
-            $('.carousel').carousel();
-        });
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {indicators: true});
+    });
       
     </script>
 
