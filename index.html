@@ -14,7 +14,8 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
+    
+    
 </head>
 <style>
 
@@ -37,6 +38,11 @@
         .jobline{
             font-size: 50px;
             width: 100%;
+        }
+        .carousel .carousel-item{
+            height: 400px;
+            visibility: visible;
+            
         }
 }
 </style>
@@ -173,7 +179,7 @@
     </div>
 
 
-    <div class="row" style="margin-top: 10vh;">
+    <div class="row show-on-medium-and-up hide-on-small-only" style="margin-top: 10vh;">
         <h1 class="center testimonial" >
             TESTIMONIALS
         </h1>
@@ -185,7 +191,7 @@
             </div>
         </div>
 
-        <div class="col s12 m4 center">
+        <div class="col s12 m4 center ">
             <div class="card testicard " >
                 <img src="craft.jpeg" alt="Avatar" style="width:52%">
                 <div class="container">
@@ -235,6 +241,72 @@
                 </div>
               </div> 
         </div>
+    </div>
+
+    <!-- crousal here -->
+    <div class=" show-on-small hide-on-med-and-up " style="margin-top: 10vh;">
+        <h1 class="center testimonial" >
+            TESTIMONIALS
+        </h1>
+
+        <div class="container" style="margin-bottom:10%">
+            <div class="container">
+                <div class="divider" style="height: 1px; background-color: black;">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="carousel carousel-slider show-on-small hide-on-med-and-up">
+            <div class="carousel-item" href="#one!">
+                <img src="crafttesti.png">
+            </div>
+            <a class="carousel-item" href="#two!"><img src="meritesti.png"></a>
+            <a class="carousel-item" href="#three!"><img src="vinittesti.png"></a>
+            <!-- <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+            <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a> -->
+        </div>
+
+        <!-- <div class="carousel  show-on-small hide-on-med-and-up "> -->
+        <!-- <div class="col s12 m4 center" > -->
+            <!-- <div class="carousel-item red white-text" href="#one!">
+                <h2>First Panel</h2>
+                <p class="black-text">This is your first panel</p>
+              </div> -->
+        <!-- </div> -->
+        <!-- <div class="col s12 m4 center  " >
+            <div class="card testicard carousel-item" href="#two!" >
+                <img src="merry.jpeg" alt="Avatar" style="width:29.5%">
+                <div class="container">
+                  <h4><b>Merry Makers</b></h4>
+                  <p>They are really good at providing their customer with excellent and punctual
+                    service while taking all precautionary safety and hygienic measures, while also giving that
+                    extra touch every time. I have been using them from the launch and they’ve never let me
+                    down and have been consistently brilliant. In short, you can find them very reliable and
+                    helpful company as they delivery friendly service and prompt delivery. Goods delivered on
+                    time with the best price.<br> <br> <br> <br> <br> <br> <br> <br> <br> </p>
+                </div>
+            </div> 
+        </div> -->
+        <!-- <div class="col s12 m4 center  " href="#three!">
+            <div class="card testicard carousel-item" >
+                <img src="vinit.jpeg" alt="Avatar" style="width:26.5%">
+                <div class="container">
+                  <h4><b>Vinit</b></h4>
+                  <p>I don’t know from where to begin. We were really tensed to give our clothes for
+                    ironing or dry cleaning after the lockdown due to high risk of COVID-19. Then, I came to
+                    know about 4delivery from my relative, where they welcomed us with their amazing services
+                    and extremely reasonable prices. However, my favourite is the precise folding and cleanliness
+                    of clothes. The most amazing part is that they take extreme care of COVID-19, as they use
+                    some WHO certified sanitizer for clothes (after permission from customer) which kills
+                    coronavirus for the next one month. If you need a clean amazing laundry service here is your
+                    place!!!&. I really love and appreciate 4delivery and their workers who are constantly
+                    working to take care of us even through this pandemic. They've made us feel reassured and
+                    comfortable to give clothes for washing.<br> <br> </p>
+                </div>
+              </div> 
+        </div> -->
+        <!-- </div> -->
     </div>
     <div class="row" style="margin-top: 10vh;">
         <h1 class="center jobline" >
@@ -349,6 +421,13 @@
                 });
             });
         })(jQuery);
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+      
     </script>
 
     <script src="js/jquery.instagramFeed.min.js"></script>
