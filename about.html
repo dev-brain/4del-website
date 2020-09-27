@@ -14,221 +14,316 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .bgImg {
+            position: relative;
+            text-align: center;
+        }
 
-<style>
-    .container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-</style>
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="loader"></div>
-    
-    <div class="container">
+    <div class="bgImg">
         <img src="bg.png" alt="back" width="100%">
-        <div class="centered">
-                About Us  <br>
-    
-                    4Delivery is an online marketplace for all your needs at one place. We live by the motto 
-                    ‘Delivering Home, Away from Home’. What we at core of this company are, is providing all 
-                    the facilities to students living away from home, while providing a platform for all the 
-                    local entrepreneurs and household businesses. Everything we strive to deliver begins at home 
-                    and ends at home. We aim to empower both, our customers and our business partners. Both are an 
-                    important part of our family here at 4Delivery. It is our endeavour to encourage the dreams of 
-                    people who want to apply their talents from home to meet customers who appreciate such talent. 
-                    4Delivery aims at delivering services full of warmth and goodness. 
-    <br>
-                    We hope to see you become a part of our family here at 4Delivery instantaneously.
+        <div class="container" style="position: absolute; top: 50%;
+        left: 50%;
+        color: white;
+        text-align: justify;
+        transform: translate(-50%, -50%);">
+            <h4 class="center">
+                About Us
+            </h4>
+            <p>
+                4Delivery is an online marketplace for all your needs at one place. We live by the motto
+                ‘Delivering Home, Away from Home’. What we at core of this company are, is providing all
+                the facilities to students living away from home, while providing a platform for all the
+                local entrepreneurs and household businesses. Everything we strive to deliver begins at home
+                and ends at home. We aim to empower both, our customers and our business partners. Both are an
+                important part of our family here at 4Delivery. It is our endeavour to encourage the dreams of
+                people who want to apply their talents from home to meet customers who appreciate such talent.
+                4Delivery aims at delivering services full of warmth and goodness.
+                <br>
+                We hope to see you become a part of our family here at 4Delivery instantaneously.
+            </p>
         </div>
     </div>
-<div class="row">
-    <h1 class="center testimonial">
-        FOUNDERS
-    </h1>
-    <div class="container" style="margin-bottom:5%">
+
+    <div class="row">
+        <h1 class="center testimonial">
+            FOUNDERS
+        </h1>
         <div class="container">
-            <div class="divider" style="height: 1px; background-color: black;">
+            <div class="divider black"></div>
+        </div>
+        <div class="cont">
+            <div class="content">
+                <a href="">
+                    <div class="content-overlay circle"></div>
+                    <img class="content-image circle" src="founder (3).png" width="10%">
+                    <div class="content-details fadeIn-top">
+                        <a href="https://www.instagram.com/4delivery_/"><i style="color: white;font-size: 25px;"
+                                class="fab fa-linkedin" style="font-size: 30px;"></i></a>
+                        <p>This is a short description</p>
+                    </div>
+                </a>
             </div>
+        </div>
+        <div class="cont">
+            <div class="content">
+                <a href="">
+                    <div class="content-overlay circle"></div>
+                    <img class="content-image circle" src="founder (4).png" width="10%">
+                    <div class="content-details fadeIn-top">
+                        <a href="https://www.instagram.com/4delivery_/"><i style="color: white;font-size: 25px;"
+                                class="fab fa-linkedin" style="font-size: 30px;"></i></a>
+                        <p>This is a short description</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="content">
+                <a href="">
+                    <div class="content-overlay circle"></div>
+                    <img class="content-image circle" src="founder (1).png" width="10%">
+                    <div class="content-details fadeIn-top">
+                        <a href="https://www.instagram.com/4delivery_/"><i style="color: white;font-size: 25px;"
+                                class="fab fa-linkedin" style="font-size: 30px;"></i></a>
+                        <p>This is a short description</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="content">
+                <a href="">
+                    <div class="content-overlay circle"></div>
+                    <img class="content-image circle" src="founder (2).png" width="10%">
+                    <div class="content-details fadeIn-top">
+                        <a href="https://www.instagram.com/4delivery_/"><i style="color: white;font-size: 25px;"
+                                class="fab fa-linkedin" style="font-size: 30px;"></i></a>
+                        <p>This is a short description</p>
+                    </div>
+                </a>
+            </div>
+        </div>
 
+    </div>
+
+
+
+    <div class="row">
+        <h1 class="center testimonial">
+            FOUNDERS
+        </h1>
+        <div class="container" style="margin-bottom:5%">
+            <div class="container">
+                <div class="divider" style="height: 1px; background-color: black;">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="founder (3).png" alt="" class="circle z-depth-5 image" width="50%">
+            <h4 class="center" style="margin-top: 10%;">Harsh Sangani</h4>
+            <h5 class="center">Founder and Executive Director</h5>
+            <p style="text-align: justify;padding-left: 10%;padding-right:10%;">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="founder (4).png" alt="" class="circle z-depth-5" width="50%">
+            <h4 class="center" style="margin-top: 10%;">Aman Baheti</h4>
+            <h5 class="center">Founder and Managing Director</h5>
+            <p style="text-align: justify;padding-left: 10%;padding-right:10%;">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="founder (1).png" alt="" class="circle z-depth-5" width="50%">
+            <h4 class="center" style="margin-top: 10%;">Burhan Murtaza</h4>
+            <h5 class="center">Founder</h5>
+            <p style="text-align: justify;padding-left: 10%;padding-right:10%;">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="founder (2).png" alt="" class="circle z-depth-5" width="50%">
+            <h4 class="center" style="margin-top: 10%;">Naman Baheti</h4>
+            <h5 class="center">Founder</h5>
+            <p style="text-align: justify;padding-left: 10%;padding-right:10%;">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
         </div>
     </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="founder (3).png" alt="" class="circle z-depth-5" width="50%">
-        <h4 class="center" style="margin-top: 10%;">Harsh Sangani</h4>
-        <h5 class="center" >Founder and Executive Director</h5>
-        <p style="text-align: justify;padding-left: 10%;padding-right:10%;">Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
     </div>
 
-    <div class="col s12 m3 center ">
+    <div class="row show-on-medium-and-up hide-on-small-only" style="margin-top: 5vh;">
+        <h1 class="center testimonial">
+            Team
+        </h1>
+        <div class="container" style="margin-bottom:10%">
+            <div class="container">
+                <div class="divider" style="height: 1px; background-color: black;">
+                </div>
 
-        <img src="founder (4).png" alt="" class="circle z-depth-5" width="50%">
-        <h4 class="center" style="margin-top: 10%;">Aman Baheti</h4>
-        <h5 class="center" >Founder and Managing Director</h5>
-        <p style="text-align: justify;padding-left: 10%;padding-right:10%;">Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-    </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="founder (1).png" alt="" class="circle z-depth-5" width="50%">
-        <h4 class="center" style="margin-top: 10%;">Burhan Murtaza</h4>
-        <h5 class="center" >Founder</h5>
-        <p style="text-align: justify;padding-left: 10%;padding-right:10%;">Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-    </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="founder (2).png" alt="" class="circle z-depth-5" width="50%">
-        <h4 class="center" style="margin-top: 10%;">Naman Baheti</h4>
-        <h5 class="center" >Founder</h5>
-        <p style="text-align: justify;padding-left: 10%;padding-right:10%;">Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-    </div>
-</div>
-</div>
-
-<div class="row show-on-medium-and-up hide-on-small-only" style="margin-top: 5vh;">
-    <h1 class="center testimonial">
-        Team
-    </h1>
-    <div class="container" style="margin-bottom:10%">
-        <div class="container">
-            <div class="divider" style="height: 1px; background-color: black;">
             </div>
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="team (1).png" alt="" class="circle z-depth-5" width="50%">
+            <h4 class="center" style="margin-top: 10%;">Rishabh Yadav</h4>
+            <h5 class="center">Operational Manager</h5>
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="team (2).png" alt="" class="circle z-depth-5" width="30%">
+            <h4 class="center" style="margin-top: 10%;">Khushi Golchha</h4>
+            <h5 class="center">Public Relations</h5>
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="team (3).png" alt="" class="circle z-depth-5" width="30%">
+            <h4 class="center" style="margin-top: 10%;">Shagun Sarda</h4>
+            <h5 class="center">Graphic Designer</h5>
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="team (5).png" alt="" class="circle z-depth-5" width="30%">
+            <h4 class="center" style="margin-top: 10%;">Yukta Laul</h4>
+            <h5 class="center">Public Relations</h5>
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="team (8).png" alt="" class="circle z-depth-5" width="30%">
+            <h4 class="center" style="margin-top: 10%;">Karan Baheti</h4>
+            <h5 class="center">Content Writing and Public Relations</h5>
+        </div>
+
+    </div>
+
+
+    <div class="row show-on-medium-and-up hide-on-small-only" style="margin-top: 5vh;">
+        <h1 class="center testimonial">
+            Delivery Valets
+        </h1>
+        <div class="container" style="margin-bottom:10%">
+            <div class="container">
+                <div class="divider" style="height: 1px; background-color: black;">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
+            <h4 class="center" style="margin-top: 10%;">ABC</h4>
 
         </div>
-    </div>
 
-    <div class="col s12 m3 center ">
+        <div class="col s12 m3 center ">
 
-        <img src="team (1).png" alt="" class="circle z-depth-5" width="50%">
-        <h4 class="center" style="margin-top: 10%;">Rishabh Yadav</h4>
-        <h5 class="center" >Operational Manager</h5>
-    </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="team (2).png" alt="" class="circle z-depth-5" width="30%">
-        <h4 class="center" style="margin-top: 10%;">Khushi Golchha</h4>
-        <h5 class="center" >Public Relations</h5>
-    </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="team (3).png" alt="" class="circle z-depth-5" width="30%">
-        <h4 class="center" style="margin-top: 10%;">Shagun Sarda</h4>
-        <h5 class="center" >Graphic Designer</h5>
-    </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="team (5).png" alt="" class="circle z-depth-5" width="30%">
-        <h4 class="center" style="margin-top: 10%;">Yukta Laul</h4>
-        <h5 class="center" >Public Relations</h5>
-    </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="team (8).png" alt="" class="circle z-depth-5" width="30%">
-        <h4 class="center" style="margin-top: 10%;">Karan Baheti</h4>
-        <h5 class="center" >Content Writing and Public Relations</h5>
-    </div>
-    
-</div>
-
-
-<div class="row show-on-medium-and-up hide-on-small-only" style="margin-top: 5vh;">
-    <h1 class="center testimonial">
-        Delivery Valets
-    </h1>
-    <div class="container" style="margin-bottom:10%">
-        <div class="container">
-            <div class="divider" style="height: 1px; background-color: black;">
-            </div>
+            <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
+            <h4 class="center" style="margin-top: 10%;">ABC</h4>
 
         </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
+            <h4 class="center" style="margin-top: 10%;">ABC</h4>
+
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
+            <h4 class="center" style="margin-top: 10%;">ABC</h4>
+
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
+            <h4 class="center" style="margin-top: 10%;">ABC</h4>
+
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
+            <h4 class="center" style="margin-top: 10%;">ABC</h4>
+
+        </div>
+
+        <div class="col s12 m3 center ">
+
+            <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
+            <h4 class="center" style="margin-top: 10%;">ABC</h4>
+
+        </div>
+
+
     </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
-        <h4 class="center" style="margin-top: 10%;">ABC</h4>
-        
-    </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
-        <h4 class="center" style="margin-top: 10%;">ABC</h4>
-        
-    </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
-        <h4 class="center" style="margin-top: 10%;">ABC</h4>
-        
-    </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
-        <h4 class="center" style="margin-top: 10%;">ABC</h4>
-        
-    </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
-        <h4 class="center" style="margin-top: 10%;">ABC</h4>
-        
-    </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
-        <h4 class="center" style="margin-top: 10%;">ABC</h4>
-        
-    </div>
-
-    <div class="col s12 m3 center ">
-
-        <img src="TEST.png" alt="" class="circle z-depth-5" width="30%">
-        <h4 class="center" style="margin-top: 10%;">ABC</h4>
-        
-    </div>
-
-    
-</div>
 
 </body>
 
