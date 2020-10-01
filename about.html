@@ -45,6 +45,9 @@
             -ms-transform: translate(-50%, -50%);
             text-align: center;
         }
+        @media only screen and (max-width: 600px) {
+            
+        }
     </style>
 </head>
 
@@ -67,7 +70,9 @@
     <div class="navbar-fixed show-on-small hide-on-med-and-up">
     <nav>
         <div class="nav-wrapper " style="background-color: #003152; ">
-          <a href="index.html" class="brand-logo"><img src="logo2line.png" alt="" style="width: 200px; margin-top: 10px;"></a>
+          <a href="index.html"  class="brand-logo"><img src="logo2line.png" alt="" style="width: 200px; margin-top: 10px;">
+            <!-- <i class="material-icons button-collapse">dehaze</i> -->
+        </a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="sidenav" id="mobile-demo">
             <li><a href="about.html">ABOUT</a></li>           
@@ -77,8 +82,34 @@
     </div>
     
 
-    <div class="bgImg">
+    <div class="bgImg hide-on-small-only show-on-medium-and-up" >
         <img src="bg.png" alt="back" width="100%">
+        <div class="container" style="position: absolute; top: 50%;
+        left: 50%;
+        color: white;
+        text-align: justify;
+        transform: translate(-50%, -50%);">
+            <h4 class="center">
+                <b>About Us</b>
+            </h4>
+            <p>
+               <b> 4Delivery is an online marketplace for all your needs at one place. We live by the motto
+                ‘Delivering Home, Away from Home’. What we at core of this company are, is providing all
+                the facilities to students living away from home, while providing a platform for all the
+                local entrepreneurs and household businesses. Everything we strive to deliver begins at home
+                and ends at home. We aim to empower both, our customers and our business partners. Both are an
+                important part of our family here at 4Delivery. It is our endeavour to encourage the dreams of
+                people who want to apply their talents from home to meet customers who appreciate such talent.
+                4Delivery aims at delivering services full of warmth and goodness.
+                <br>
+                We hope to see you become a part of our family here at 4Delivery instantaneously.</b>
+            </p>
+        </div>
+        
+    </div>
+
+    <div class="bgImg show-on-small hide-on-med-and-up" >
+        <img src="mobabt.png" alt="back" width="100%">
         <div class="container" style="position: absolute; top: 50%;
         left: 50%;
         color: white;
