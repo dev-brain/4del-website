@@ -52,7 +52,7 @@
 
 
         
-    <div class="navbar-fixed">
+    <div class="navbar-fixed hide-on-small-only show-on-medium-and-up">
         <nav>
             <div class="nav-wrapper" style="background-color: #003152; ">
             <a href="index.html" class="brand-logo"><img src="logo2line.png" alt="" style="width: 200px; margin-top: 10px;"></a>
@@ -63,6 +63,19 @@
             </div>
         </nav>
     </div>    
+
+    <div class="navbar-fixed show-on-small hide-on-med-and-up">
+    <nav>
+        <div class="nav-wrapper " style="background-color: #003152; ">
+          <a href="index.html" class="brand-logo"><img src="logo2line.png" alt="" style="width: 200px; margin-top: 10px;"></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="about.html">ABOUT</a></li>           
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
 
     <div class="bgImg">
         <img src="bg.png" alt="back" width="100%">
@@ -317,5 +330,12 @@
     </footer>
 
 </body>
+<script>
+
+     $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+
+</script>
 
 </html>
