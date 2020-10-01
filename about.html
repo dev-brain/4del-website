@@ -46,7 +46,32 @@
             text-align: center;
         }
         @media only screen and (max-width: 600px) {
-            
+            .carousel .carousel-item {
+            height: 990px;
+            visibility: visible;
+            }
+
+            .carousel {
+            height: 790px;
+            margin-bottom: 10px;
+            }
+
+            .teamcrousel{
+                height: 500px;
+            }
+
+            .carousel .indicators .indicator-item {
+            background-color: #81b6da;
+            }
+
+            .carousel .indicators .indicator-item.active {
+            background-color: #003152;
+            }
+
+            .mission{
+                height: 270px;
+            }
+
         }
     </style>
 </head>
@@ -55,32 +80,39 @@
 
 
         
-    <div class="navbar-fixed hide-on-small-only show-on-medium-and-up">
+    <!-- <div class="navbar-fixed ">
         <nav>
             <div class="nav-wrapper" style="background-color: #003152; ">
-            <a href="index.html" class="brand-logo"><img src="logo2line.png" alt="" style="width: 200px; margin-top: 10px;"></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="index.html" style="font-size: larger; margin-right: 45px;"> <b> HOME</b></a></li>
-                
-            </ul>
+                <a href="index.html" class="brand-logo"><img src="logo2line.png" alt="" style="width: 200px; margin-top: 10px;"></a>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="index.html" style="font-size: larger; margin-right: 45px;"> 
+                            <b> HOME</b>
+                        </a>
+                    </li>               
+                </ul>
             </div>
         </nav>
-    </div>    
+    </div>     -->
 
-    <div class="navbar-fixed show-on-small hide-on-med-and-up">
+    
+    
+    <div class="navbar-fixed">
     <nav>
-        <div class="nav-wrapper " style="background-color: #003152; ">
-          <a href="index.html"  class="brand-logo"><img src="logo2line.png" alt="" style="width: 200px; margin-top: 10px;">
-            <!-- <i class="material-icons button-collapse">dehaze</i> -->
-        </a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="sidenav" id="mobile-demo">
-            <li><a href="about.html">ABOUT</a></li>           
+        <div class="nav-wrapper " style="background-color: #003152;">
+          <a href="index.html" class="brand-logo"><img src="logo2line.png" alt="" style="width: 200px; margin-top: 7px;"></a>
+          <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li ><a href="index.html" ><b> HOME</b></a></li>
           </ul>
         </div>
-      </nav>
+    </nav>
     </div>
     
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="index.html" style="margin-top: 100px; font-size: 20px; text-align: center; color: #003152;"><b> HOME</b></a></li>
+    </ul>
 
     <div class="bgImg hide-on-small-only show-on-medium-and-up" >
         <img src="bg.png" alt="back" width="100%">
@@ -134,23 +166,26 @@
         
     </div>
 
-    <div class="row">
+    <!-- hide-on-small-only show-on-medium-and-up -->
+    
+    <div class="row hide-on-small-only show-on-medium-and-up">
         <h1 class="center testimonial">
             FOUNDERS
         </h1>
+        
         <div class="container">
             <div class="divider black" style="margin:0% 20% 5% 20%;"></div>
         </div>
         <div class="cont">
             <div class="content">
-                <a href="">
+                <a href="https://www.linkedin.com/in/harsh-sangani-119a87152">
                     <div class="content-overlay circle"></div>
                     <img class="content-image circle" src="founder (3).png" width="10%">
                     
                     <div class="content-details fadeIn-top">
-                        <a href="https://www.linkedin.com/in/harsh-sangani-119a87152"><i style="color: white;font-size: 25px;"
-                                class="fab fa-linkedin" style="font-size: 30px;"></i></a>
-                
+                        <a href="https://www.linkedin.com/in/harsh-sangani-119a87152">
+                            <i style="color: white;font-size: 25px;" class="fab fa-linkedin" style="font-size: 30px;"> </i>
+                        </a>              
                     </div>
                 </a>
             </div>
@@ -163,13 +198,17 @@
             </p>
         </div>
 
+        <!-- <p style="text-align: center;"><i style="color: #003152;font-size: 35px; text-align: center; font-size: 40px;" class="fab fa-linkedin" ></i></p>
+        <p style="text-align: center;">LinkedIn </p> -->
+
+        
         <div class="cont">
             <div class="content">
-                <a href="">
+                <a href="http://linkedin.com/in/aman-baheti-67774b1a7">
                     <div class="content-overlay circle"></div>
                     <img class="content-image circle" src="founder (4).png" width="10%">
 
-                    <a href="http://linkedin.com/in/aman-baheti-67774b1a7"></a>
+                    
                     
                     <div class="content-details fadeIn-top">
                         <a href="http://linkedin.com/in/aman-baheti-67774b1a7"><i style="color: white;font-size: 25px;"
@@ -188,9 +227,13 @@
             </p>
         </div>
 
+        <!-- <p style="text-align: center;"><i style="color: #003152;font-size: 35px; text-align: center; font-size: 40px;" class="fab fa-linkedin" ></i></p>
+        <p style="text-align: center;">LinkedIn </p>
+        <br> -->
+
         <div class="cont">
             <div class="content">
-                <a href="">
+                <a href="https://www.linkedin.com/in/burhan-murtaza-244483188">
                     <div class="content-overlay circle"></div>
                     <img class="content-image circle" src="founder (1).png" width="10%">
                     
@@ -210,9 +253,13 @@
             </p>
         </div>
 
+        <!-- <p style="text-align: center;"><i style="color: #003152;font-size: 35px; text-align: center; font-size: 40px;" class="fab fa-linkedin" ></i></p>
+        <p style="text-align: center;">LinkedIn </p>
+        <br> -->
+
         <div class="cont">
             <div class="content">
-                <a href="">
+                <a href="http://linkedin.com/in/naman-baheti-14436018a">
                     <div class="content-overlay circle"></div>
                     <img class="content-image circle" src="founder (2).png" width="10%">
                     
@@ -232,46 +279,80 @@
             </p>
         </div>
 
+        <!-- <p style="text-align: center;"><i style="color: #003152;font-size: 35px; text-align: center; font-size: 40px;" class="fab fa-linkedin" ></i></p>
+        <p style="text-align: center;">LinkedIn </p>
+        <br> -->
+
     </div>
     </div>
 
+    <h1 class="center testimonial show-on-small hide-on-med-and-up">
+        FOUNDERS
+    </h1>
+    <div class="carousel carousel-slider show-on-small hide-on-med-and-up">
+        <!-- <div class="carousel-item" href="#one!">
+            <img src="crafttesti.png">
+        </div> -->
+        <div class="carousel-item" href="https://www.linkedin.com/in/harsh-sangani-119a87152">
+            <a href="https://www.linkedin.com/in/harsh-sangani-119a87152" style="width: 50%;">
+                <img src="harsh.png" width="100%">
+            </a>
+        </div>
+
+        <div class="carousel-item" href="http://linkedin.com/in/aman-baheti-67774b1a7">
+            <a href="http://linkedin.com/in/aman-baheti-67774b1a7" style="width: 50%;">
+                <img src="aman.png" width="100%">
+            </a>
+        </div>
+        <div class="carousel-item" href="https://www.linkedin.com/in/burhan-murtaza-244483188">
+            <a href="https://www.linkedin.com/in/burhan-murtaza-244483188">
+                <img src="burhan.png" width="100%">
+            </a>
+        </div>
+        <div class="carousel-item" href="http://linkedin.com/in/naman-baheti-14436018a">
+            <a href="http://linkedin.com/in/naman-baheti-14436018a">
+                <img src="naman.png" width="100%">
+            </a>
+        </div>
+    </div>
+
     <div class="bgImg">
-        <img src="bg2.jpg" alt="back" width="100%" >
+        <img src="bg2.jpg" class="mission" alt="back" width="100%" >
         <div class="container" style="position: absolute; top: 50%;
         left: 50%;
         color: white;
         text-align: justify;
         transform: translate(-50%, -50%);">
-        <div class= "row">
-        <div class="col s12 m6 center">
-            <h4 class="center">
-                <b>Our Mission</b>
-            </h4>
-            <p  class="center">
-                <b>To promote home entrepreneurs by providing them digital 
-                platform & to offer our customers all the services at affordable prices at doorstep.</b>
-            </p>
-        </div>
-        <div class="col s12 m6 center">
-            <h4 class="center">
-                <b>Our Vision</b>
-            </h4>
-            <p  class="center">
-                <b>To be the leader in providing door step services at the best available rates.</b>
-            </p>
+            <div class= "row">
+                <div class="col s12 m6 center">
+                    <h4 class="center">
+                        <b>Our Mission</b>
+                    </h4>
+                    <p  class="center">
+                        <b>To promote home entrepreneurs by providing them digital 
+                        platform & to offer our customers all the services at affordable prices at doorstep.</b>
+                    </p>
+                </div>
+                <div class="col s12 m6 center">
+                    <h4 class="center">
+                        <b>Our Vision</b>
+                    </h4>
+                    <p  class="center">
+                        <b>To be the leader in providing door step services at the best available rates.</b>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-</div>
 
-    <section>
+    <section class="hide-on-small-only show-on-medium-and-up">
         <div class="row center">
             <div class="container ">
                 <h1 class="center  testimonial">
                     OUR TEAM
                 </h1>
-        <div class="divider black" style="margin:0% 20% 5% 20%;"></div>
-            </div>
+            <div class="divider black" style="margin:0% 20% 5% 20%;"></div>
+        </div>
             <div class="col s12 m1"></div>
         <div class="col s12 m2 ">
 
@@ -310,6 +391,57 @@
 
     </div>
     </section>
+
+    <h1 class="center  testimonial show-on-small hide-on-med-and-up" >
+        OUR TEAM
+    </h1>
+    <div class="carousel carousel-slider show-on-small hide-on-med-and-up teamcrousel">
+        
+              
+            
+        <div class="carousel-item" >
+            <div class="col s12 m2 center ">
+
+                <img src="team (1).png" alt="" class="circle z-depth-5" width="70%">
+                <h5 class="center" ><b>Rishabh Yadav</b></h5>
+                <h6 class="center">Operational Manager</h6>
+            </div>
+        </div>
+
+        <div class="carousel-item" >
+            <div class="col s12 m2 center ">
+
+                <img src="team (2).png" alt="" class="circle z-depth-5" width="70%">
+                <h5 class="center" style="margin-top: 10%;"><b>Khushi Golchha</b></h5>
+                <h6 class="center">Public Relations</h6>
+            </div>
+        </div>
+        <div class="carousel-item" >
+            <div class="col s12 m2 center ">
+
+                <img src="team (3).png" alt="" class="circle z-depth-5" width="70%">
+                <h5 class="center" style="margin-top: 10%;"><b>Shagun Sarda</b></h5>
+                <h6 class="center">Graphic Designer</h6>
+            </div>
+        </div>
+        <div class="carousel-item" href="http://linkedin.com/in/naman-baheti-14436018a">
+            <div class="col s12 m2 center ">
+
+                <img src="team (5).png" alt="" class="circle z-depth-5" width="70%">
+                <h5 class="center" style="margin-top: 10%;"><b>Yukta Laul</b></h5>
+                <h6 class="center">Public Relations</h6>
+            </div>
+        </div>
+        <div class="carousel-item" href="http://linkedin.com/in/naman-baheti-14436018a">
+            <div class="col s12 m2 center ">
+
+                <img src="team (8).png" alt="" class="circle z-depth-5" width="70%">
+                <h5 class="center" style="margin-top: 10%;"><b>Karan Baheti</b></h5>
+                <h6 class="center">Content Writing and Public Relations</h6>
+            </div>
+        </div>
+    </div>
+
     <footer class="page-footer" style="background-color: #003152;">
         <div class="container">
             <div class="row">
@@ -361,12 +493,22 @@
     </footer>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
 
      $(document).ready(function(){
         $('.sidenav').sidenav();
     });
 
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {
+            indicators: true
+        });
+    });
 </script>
 
 </html>
