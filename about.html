@@ -45,6 +45,17 @@
             -ms-transform: translate(-50%, -50%);
             text-align: center;
         }
+
+        #loader {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 99999999;
+        overflow: visible;
+        background: white url("loader.mp4") no-repeat center center;
+        background-size: 600px;
+        }
+
         @media only screen and (max-width: 600px) {
             .carousel .carousel-item {
             height: 990px;
@@ -78,30 +89,20 @@
 
 <body>
 
-
+    <div id="loader"></div>
         
-    <!-- <div class="navbar-fixed ">
-        <nav>
-            <div class="nav-wrapper" style="background-color: #003152; ">
-                <a href="index.html" class="brand-logo"><img src="logo2line.png" alt="" style="width: 200px; margin-top: 10px;"></a>
-
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li>
-                        <a href="index.html" style="font-size: larger; margin-right: 45px;"> 
-                            <b> HOME</b>
-                        </a>
-                    </li>               
-                </ul>
-            </div>
-        </nav>
-    </div>     -->
-
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large green lighten-2"
+            href="https://wa.me/+919049109911?text=I%20was%20exploring%20the%20website.%20Would %20like%20to%20know%20more.">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
     
     
     <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper " style="background-color: #003152;">
-          <a href="index.html" class="brand-logo"><img src="logo2line.png" alt="" style="width: 200px; margin-top: 7px;"></a>
+          <a href="index.html" class="brand-logo"><img src="logo2line.png" alt="" style="width: 200px; margin-top: 10px;"></a>
           <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li ><a href="index.html" ><b> HOME</b></a></li>
@@ -111,6 +112,9 @@
     </div>
     
     <ul class="sidenav" id="mobile-links">
+        <p style="text-align: center; margin-top: 50px;">
+            <a href="index.html" class="brand-logo"><img src="logo.png" alt="" style="width: 100px; margin-top: 10px; text-align: center; margin: auto 0;"></a>
+        </p>
         <li><a href="index.html" style="margin-top: 100px; font-size: 20px; text-align: center; color: #003152;"><b> HOME</b></a></li>
     </ul>
 
@@ -509,6 +513,12 @@
             indicators: true
         });
     });
+</script>
+
+<script>
+     $(window).on('load', function () {
+                $("#loader").fadeOut("slow");
+     });
 </script>
 
 </html>
